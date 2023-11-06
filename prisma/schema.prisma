@@ -15,3 +15,8 @@ model activity {
   id   String @id @default(auto()) @map("_id") @db.ObjectId
   slug String @unique
 }
+
+model messages {
+  id          String @id @default(auto()) @map("_id") @db.ObjectId
+  messageData String @unique
+}
